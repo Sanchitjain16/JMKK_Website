@@ -1,0 +1,110 @@
+.pagination {
+    display: flex !important;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 3px; }
+    
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #000;
+  background-color: #3366ff;
+  border-color: #3366ff; }
+
+.page-item.disabled .page-link {
+  color: #7987a1;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #cdd4e0; }
+
+.pagination-lg .page-link {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.09375rem;
+  line-height: 1.5; }
+
+.pagination-lg .page-item:first-child .page-link {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem; }
+
+.pagination-lg .page-item:last-child .page-link {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem; }
+
+.pagination-sm .page-link {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.76562rem;
+  line-height: 1.5; }
+
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: 0.2rem;
+  border-bottom-left-radius: 0.2rem; }
+
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: 0.2rem;
+  border-bottom-right-radius: 0.2rem; }
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+  border-radius: 0; }
+
+.page-item + .page-item {
+  margin-left: 1px; }
+
+.page-item.active .page-link {
+  background-color: #fbf847; }
+
+.page-link {
+  color: #000;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 38px;
+  border-width: 0;
+  background-color: #e3e7ed;
+  margin-left: 0;
+  font-weight: 500; }
+  .page-link i {
+    font-size: 18px;
+    line-height: 0; }
+  .page-link:hover, .page-link:focus {
+    color: #1c273c;
+    background-color: #cdd4e0; }
+
+.pagination-dark .page-item.active .page-link {
+  background-color: #5b47fb;
+  color: #fff; }
+
+.pagination-dark .page-link {
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.8); }
+  .pagination-dark .page-link:hover, .pagination-dark .page-link:focus {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.08); }
+
+.pagination-primary .page-item.active .page-link {
+  background-color: #3366ff; }
+
+.pagination-success .page-item.active .page-link {
+  background-color: #3bb001; }
+
+.pagination-circled .page-item + .page-item {
+  margin-left: 5px; }
+
+.pagination-circled .page-item:first-child .page-link, .pagination-circled .page-item:last-child .page-link {
+  border-radius: 100%; }
+
+.pagination-circled .page-link {
+  padding: 0;
+  width: 40px;
+  border-radius: 100%; }
