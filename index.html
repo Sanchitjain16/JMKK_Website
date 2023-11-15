@@ -835,16 +835,16 @@
 <section class="bg-gray-100 ">
     <div class="max-w-7xl px-5 py-5 mx-auto md:py-20">
         
-        <div class="max-w-2xl rounded-lg mb-5 bg-white p-10 mx-auto">
+        <!-- <div class="max-w-2xl rounded-lg mb-5 bg-white p-10 mx-auto">
 
             <h3 class="mb-4 text-xl font-normal sm:text-center  sm:mb-6 sm:text-2xl">
                 Contact us
             </h3>
             <form id="website_form"
                 action="https://script.google.com/macros/s/AKfycbzzNJoBlIubbCkOSAK56ZLz5EZN4hYHwK2SOETGGeZ1_rSMCNyuiaxZxYr7RkgM66SDSA/exec"
-                method="POST">
+                method="POST"> -->
                 <!-- <input type="hidden" name="type" id="type" value="Digital marketing" placeholder="Name" autocomplete="email" class="block w-full p-3 mt-2 text-gray-700 bg-gray-100 border border-gray-200 appearance-none focus:outline-none focus:bg-gray-200 focus:shadow-inner"  /> -->
-                <label for="text" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Name</label>
+                <!-- <label for="text" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Name</label>
                 <input name="Name" type="text" placeholder="Name" required autocomplete="name"
                     class="block w-full p-3 mt-2 text-gray-700 bg-gray-100 border border-gray-200 appearance-none focus:outline-none focus:bg-gray-200 focus:shadow-inner" />
                 <label for="Company Name" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Company
@@ -869,6 +869,47 @@
                 </div>
                 <input id="submit" type="submit" value="Submit" name="submit"
                     class=" inline-flex items-center justify-center h-10  uppercase mt-5 px-6 font-normal tracking-wide text-sm text-white transition duration-200  bg-brand  focus:shadow-outline focus:outline-none" />
+            </form>
+        </div> -->
+
+        <div>
+            <div class="max-w-2xl rounded-lg mb-5 bg-white p-10 mx-auto">
+
+            <h3 class="mb-4 text-xl font-normal sm:text-center  sm:mb-6 sm:text-2xl">
+                Contact us
+            </h3>
+
+            <form action="process_form.php" method="post" enctype="multipart/form-data">
+                <label for="number" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Name</label>
+                <input name="Name" type="text" placeholder="Name" required autocomplete="name" required
+                    class="block w-full p-3 mt-2 text-gray-700 bg-gray-100 border border-gray-200 appearance-none focus:outline-none focus:bg-gray-200 focus:shadow-inner" />
+                
+                    <label for="number" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Mobile</label>
+                <input name="Phone" type="text" placeholder="Mobile" autocomplete="phone" required
+                    class="block w-full font-open p-3 mt-2 text-gray-700 bg-gray-100 border border-gray-200 appearance-none focus:outline-none focus:bg-gray-200 focus:shadow-inner" />
+                
+                    <label for="email" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Email</label>
+                <input name="Email" type="email" placeholder="Email" autocomplete="Email"
+                    class="block w-full font-open p-3 mt-2 text-gray-700 bg-gray-100 border border-gray-200 appearance-none focus:outline-none focus:bg-gray-200 focus:shadow-inner" />
+                
+                    <label for="Description"
+                    class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Other Notes</label>
+                <textarea name="Description" placeholder="Description" type="text" cols="30" rows="3"
+                    class="block w-full font-open p-3 mt-2 text-gray-700 bg-gray-100 border border-gray-200 appearance-none focus:outline-none focus:bg-gray-200 focus:shadow-inner"></textarea>
+                <input name="Source" type="hidden" value="Website">
+                
+                <label for="Attachment"
+                    class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Attach Files</label>
+                <input type="file" id="attachment" name="attachment">
+            
+                <input name="Source" type="hidden" value="Website">
+                <div class="g-recaptcha mt-5" id="recaptcha" data-sitekey="6LeAG_sfAAAAAEsIOJL-vF147Xc3QSqIbrxE5JLK">
+                </div>        
+
+                <input id="submit" type="submit" value="Submit" name="submit"
+                    class=" inline-flex items-center justify-center h-10  uppercase mt-5 px-6 font-normal tracking-wide text-sm text-white transition duration-200  bg-brand  focus:shadow-outline focus:outline-none" />
+    
+            
             </form>
         </div>
 
@@ -974,7 +1015,7 @@ var onloadCallback = function() {
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
-var BASE_URL = "https://valji.in/"
+var BASE_URL = "https://jmkk.in/"
 </script>
 <script src="https://valji.in/assets/js/script.js?v=1.1"></script>
 
