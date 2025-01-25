@@ -1,20 +1,6 @@
 <?php
 // Check if the form was submitted
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    // reCAPTCHA Secret Key (replace with your secret key from Google reCAPTCHA)
-    $secretKey = "6Lcf_8IqAAAAADRjFYpyr41eW4nf4J97fXo-wMfi";
-    $responseKey = $_POST['g-recaptcha-response'];
-    $userIP = $_SERVER['REMOTE_ADDR'];
 
-    // Verify reCAPTCHA response
-    $verifyURL = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
-    $response = file_get_contents($verifyURL);
-    $responseKeys = json_decode($response, true);
-
-    if (!$responseKeys["success"]) {
-        echo "Error: reCAPTCHA verification failed.";
-        exit;
-    }
 
     // Retrieve form data
     $name = htmlspecialchars($_POST['Name']);
