@@ -42,7 +42,5 @@
     if (isset($filePath)) {
         echo "Uploaded File: $filePath<br>";
     }
-} else {
-    echo "Error: Invalid request method.";
-}
+
 ?>
