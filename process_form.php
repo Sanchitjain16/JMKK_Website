@@ -2,7 +2,7 @@
 // Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // reCAPTCHA Secret Key (replace with your secret key from Google reCAPTCHA)
-    $secretKey = "6LeAG_sfAAAAAEsIOJL-vF147Xc3QSqIbrxE5JLK";
+    $secretKey = "6Lcf_8IqAAAAADRjFYpyr41eW4nf4J97fXo-wMfi";
     $responseKey = $_POST['g-recaptcha-response'];
     $userIP = $_SERVER['REMOTE_ADDR'];
 
